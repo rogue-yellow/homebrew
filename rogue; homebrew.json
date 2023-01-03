@@ -2,109 +2,108 @@
 	"_meta": {
 		"sources": [
 			{
-				"json": "HB",
-				"abbreviation": "HB",
-				"full": "Homebrew",
-				"authors": [
-					"rogue"
-				],
-						"version": "1.1",
-							"targetSchema": "1.9.2"
+				"json": "roguehomebrew",
+				"abbreviation": "RHB",
+				"full": "roguehomebrew",
+				"url": "",
+				"authors": ["rogue"],
+				"convertedBy": []
 			}
-		],
-		"dateAdded": 1620583536,
-		"dateLastModified": 1655240342,
-		"_dateLastModifiedHash": "d4c9fb6ec8"
+		]
 	},
-
-{"monster":[
-	{
-	"name": "Beast Caller",
-	"source": "",
-	"page": 0,
-	"size": [
-		"M"
-	],
-	"type": "humanoid",
-	"alignment": [
-		"U"
-	],
-	"ac": [
+	"monster": [
 		{
-			"ac": 13,
-			"from": [
-				"{@item hide armor|PHB|hide}"
+			"name": "Beast Caller",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "roguehomebrew",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item hide armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "3d8",
+				"average": 14
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 12,
+			"con": 12,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"cr": "1/4",
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"trait": [
+				{
+					"name": "Beast Call {@recharge}",
+					"entries": [
+						"As an action, the Wildman Beast Caller summons a beast that appears within 5 ft."
+					]
+				},
+				{
+					"name": "Beast Fury",
+					"entries": [
+						"As an action, the Wildman Beast Caller may command one beast that it is allied with to make an attack."
+					]
+				},
+				{
+					"name": "Command",
+					"entries": [
+						"As a bonus action, the Wildman Beast Caller may command one beast that it is allied with to move up to half its movement."
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"action": [
+				{
+					"name": "Quarterstaff (One-handed)",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Quarterstaff (Two-handed)",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d8}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Shortbow",
+					"entries": [
+						"{@atk rw} {@hit 3} to hit, range 80/320 ft., one target. {@h}4 ({@damage 1d6 + 1}) piercing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG"
+			],
+			"tokenUrl": "https://s3.amazonaws.com/files.d20.io/images/221841706/toUPdH0-WZvFlgzyzOiMdw/med.jpg?1620846428",
+			"environment": [
+				"forest"
 			]
 		}
-	],
-	"hp": {
-		"average": 16,
-		"formula": "3d8 + 3"
-	},
-	"speed": {
-		"walk": 30
-	},
-	"str": 10,
-	"dex": 12,
-	"con": 12,
-	"int": 10,
-	"wis": 10,
-	"cha": 10,
-	"passive": 10,
-	"languages": [
-		"Common"
-	],
-	"cr": "1/2",
-	"trait": [
-		{
-			"name": "Beast Call {@recharge}",
-			"entries": [
-				"As an action, the Wildman Beast Caller summons a beast that appears within 5 ft."
-			]
-		},
-		{
-			"name": "Beast Fury",
-			"entries": [
-				"As an action, the Wildman Beast Caller may command one beast that it is allied with to make an attack."
-			]
-		},
-		{
-			"name": "Command",
-			"entries": [
-				"As a bonus action, the Wildman Beast Caller may command one beast that it is allied with to move up to half its movement."
-			]
-		}
-	],
-	"action": [
-		{
-			"name": "Quarterstaff (One-handed)",
-			"entries": [
-				"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) bludgeoning damage."
-			]
-		},
-		{
-			"name": "Quarterstaff (Two-handed)",
-			"entries": [
-				"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d8}) bludgeoning damage."
-			]
-		},
-		{
-			"name": "Shortbow",
-			"entries": [
-				"{@atk rw} {@hit 4} to hit, range 80/320 ft., one target. {@h}4 ({@damage 1d6 + 1}) piercing damage."
-			]
-		}
-	],
-	"languageTags": [
-		"C"
-	],
-	"damageTags": [
-		"B",
-		"P"
-	],
-	"miscTags": [
-		"MW",
-		"RNG",
-		"RW"
 	]
 }
